@@ -1,0 +1,5 @@
+disable_disk_cache: true
+exclude:
+  - static/
+incremental: true
+disable_disk_cache: true

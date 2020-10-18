@@ -1,0 +1,209 @@
+<style>
+
+</style>
+<header>
+    <div>
+            <nav class="nav">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo"><a href="{% if page.logoclick %}{{page.logoclick}}{% else %}{{site.logoclick}}{% endif %}">
+                        <img src="https://s3.amazonaws.com/plivo_blog_uploads/logo/Plivo-logo.svg?v={{ 'now' | date: '%Y%m%d%H%M' }}" alt="Plivo" title="Plivo"></a>
+                    </div>
+                    <div id="nav">
+                        <ul class="nav-links {{ page.hidenavbar }}">
+                            <li class="has-drop-down products-heading"><a class="has-drop-down-a products-heading-link" href="javascript:void(0);">Products</a>
+                                <div class="drop big-drop">
+                                    {% include navbar/components/products.html %}
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/customers/">Customers</a></li>
+                            <li class="has-drop-down">
+                                <a class="has-drop-down-a" href="javascript:void(0);">Developers</a>
+                                <div class="drop medium-drop hide">
+                                    <div class="drop-holder">
+                                        <ul style="width: 100%">
+                                            <li>
+                                                <a href="/docs/">
+                                                    <div class="icon"><img src="https://www.plivo.com/assets/dist/images/v2/header/drop-ic-docs.svg"
+                                                            alt="Docs" title="Docs"></div>
+                                                    <div class="dropdown_text"><strong class="dropdown_title">Docs</strong>
+                                                       
+                                                    </div>
+                                                </a>
+                                                <div class="two-cols">
+                                                    <div class="cols"><strong class="title">Getting Started</strong>
+                                                        <ul>
+                                                            <li><a href="/docs/sms/">SMS API Platform</a></li>
+                                                            <li><a href="/docs/voice/">Voice API Platform</a></li>
+                                                            <li><a href="/docs/sip-trunking/">Zentrunk</a></li>
+                                                            <li><a href="/docs/reference/">Full API Reference</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="cols"><strong class="title">Guides</strong>
+                                                        <ul>
+                                                            <li><a href="/docs/sms/use-cases/sms-notification/">Alerts and
+                                                                    Notifications</a></li>
+                                                            <li><a href="/docs/sms/use-cases/2-factor-authentication/">Two-Factor
+                                                                    Auth</a></li>
+                                                            <li><a href="/docs/voice/use-cases/voice-notification/">Voice
+                                                                    Notifications</a>
+                                                            </li>
+                                                            <li><a href="/docs/voice/use-cases/ivr/">Phone System IVR</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://status.plivo.com/">
+                                                    <div class="icon"><img src="https://www.plivo.com/assets/dist/images/v2/header/drop-ic-base.svg"
+                                                            alt="Service Status" title="Service Status"></div>
+                                                    <div class="dropdown_text"><strong class="dropdown_title">Service Status</strong>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://support.plivo.com/hc/en-us/">
+                                                    <div class="icon"><img src="https://www.plivo.com/assets/dist/images/v2/header/drop-ic-status.svg"
+                                                            alt="Knowledge Base" title="Knowledge Base"></div>
+                                                    <div class="dropdown_text"><strong class="dropdown_title">Knowledge Base</strong>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="has-drop-down">
+                                <a class="has-drop-down-as" href="javascript:void(0);">Resources</a>
+                                <div class="drop medium-drop hide">
+                                    <div class="drop-holder">
+                                        <ul>
+                                            <li><a href="/resources/">
+                                                <div class="icon"><img src="https://www.plivo.com/assets/dist/images/v2/header/drop-ic-webinar.svg"
+                                                        alt="Blog" title="Blog"></div>
+                                                <div class="dropdown_text"><strong class="dropdown_title">Content Library</strong></div>
+                                            </a>
+                                            <ul class="add">
+                                                {% assign maxRelated = 4 %}
+                                                {% assign maxRelatedCounter = 0 %}
+
+                                                {% for post in site.posts %}
+                                                {% if post.category == 'resource' %}
+                                                <li><div class="resource-title">{{post.resourceType}}</div>
+                                                    <a class="blog-link" href="{{ post.url }}">{{post.heading}}</a></li>
+
+                                                {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+                                                {% if maxRelatedCounter >= maxRelated %}
+                                                {% break %}
+                                                {% endif %}
+                                                {% endif %}
+                                                {% endfor %}
+                                                <li>
+                                                    <a href="/resources/" style="font-weight: 600;">View all<span class="icon-arrow-large-right" style="font-size: 7px; padding-left: 5px;"></span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                            <li><a href="/blog/">
+                                                    <div class="icon"><img src="https://www.plivo.com/assets/dist/images/v2/header/drop-ic-blog.svg"
+                                                            alt="Blog" title="Blog"></div>
+                                                    <div class="dropdown_text"><strong class="dropdown_title">Blog</strong></div>
+                                                </a>
+                                                <ul class="add">
+                                                    {% assign maxRelated = 3 %}
+                                                    {% assign maxRelatedCounter = 0 %}
+
+                                                    {% for post in site.posts %}
+                                                    {% if post.layout == 'post' %}
+                                                    <li><a class="blog-link" href="{{ post.url }}">{{post.title}}</a></li>
+
+                                                    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+                                                    {% if maxRelatedCounter >= maxRelated %}
+                                                    {% break %}
+                                                    {% endif %}
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                    <li>
+                                                    <a href="/blog/" style="font-weight: 600;">View all<span class="icon-arrow-large-right" style="font-size: 7px; padding-left: 5px;"></span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pricing-header-link">
+                                <a href="/talk-to-an-expert/">Talk to an Expert</a>
+                                <a href="/pricing/">Pricing</a>
+                            </li>
+                            <li>
+                                <a class="log-in c-btn {{page.hideloginbutton}}" href="https://console.plivo.com/accounts/login/">Log in</a>
+                            </li>
+                            <li>
+                                    <a class="btn sign-up console-btn {{page.hidesignup}}" href="https://console.plivo.com/accounts/register/">Sign up</a>
+                            </li>
+
+                            </ul>
+                            {% if page.campaignStatus == "active" %}
+                              <ul class="campaignNav">
+                                  {% for heading in page.campaignHeader %}
+                                      <li class="{{heading.status}}"><a href="{{heading.link}}">{{heading.text}}</a></li>
+                                  {% endfor %}
+                                  {% if page.showLogin %}
+                                  <li>
+                                    <a class="log-in c-btn {{page.hideloginbutton}}" href="https://console.plivo.com/accounts/login/">Log in</a>
+                                </li>
+                                {% endif %}
+                                  <li>
+                                      <a class="btn sign-up fade-btn console-btn" href="https://console.plivo.com/accounts/register/">Sign up</a>
+                                  </li>
+                              </ul>
+                            {% endif %}
+                    </div>
+                </nav>
+    </div>
+  </header>
+      <div class="sentinel"></div>
+      <script>
+        if (window.matchMedia('(min-width: 767px)').matches){
+            const mainHeader = document.querySelector('.sentinel');
+            var styleElem = document.head.appendChild(document.createElement("style"));
+            const callback = entries => {
+                styleElem.innerHTML = `.campaignNav li:after {transform: translateY(${(1-entries[0].intersectionRatio) * 12}px)}`;
+            };
+            const options= {
+                  root: null,
+                rootMargin: "0px",
+                // 1 divided into 12 parts
+              threshold: [0.08333333333333333, 0.16666666666666666, 0.25, 0.3333333333333333, 0.41666666666666663, 0.5, 0.5833333333333333, 0.6666666666666666, 0.75, 0.8333333333333333, 0.9166666666666666, 1]
+            }
+            const observer = new IntersectionObserver(callback, options);
+            observer.observe(mainHeader)
+        }
+            </script>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav");
+    const links = document.querySelectorAll(".has-drop-down:not(.products-heading)");
+
+    hamburger.addEventListener("click", () => {
+        if (navLinks.classList.contains('open'))
+            setTimeout(() => {
+                navLinks.classList.remove('show')
+            }, 250);
+        else
+            navLinks.classList.add('show');
+        navLinks.classList.toggle("open");
+        document.body.classList.toggle("nav-open");
+    });
+
+    links.forEach(item => {
+        item.addEventListener('click', function () {
+            links.forEach(link => link.querySelector('.drop').classList.add('hide'));
+            item.querySelector('.drop').classList.remove('hide');
+        });
+    });
+</script>

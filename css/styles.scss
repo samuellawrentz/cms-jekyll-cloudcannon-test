@@ -1,0 +1,12 @@
+---
+---
+
+// Ignore the Error
+// The lines above are to specify the Jekyll Engine to Identify these files as SCSS and compile them
+
+// Define Global Variables Here at ./css/vars.css
+@import 'vars.css';
+
+// Include all the other SCSS Imports below
+@import 'header_footer';
+@import 'index';

@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sellular - The Business Phone</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-    {{content}}
+<body {%if page.body_class%} class="{{page.body_class}}"{%endif%}>
+    <div class="wrapper sticky-header">
+        {%- include navbar/default_header.html -%}
+        <main id="main">
+            {{content}}
+        </main>
+        {%- include navbar/default_footer.html -%}
+    </div>
 </body>
 </html>

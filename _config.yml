@@ -2,4 +2,13 @@ disable_disk_cache: true
 exclude:
   - static/
 incremental: true
-disable_disk_cache: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog-post"
+      permalink: /blog/:slug/
+      body_class: home-page

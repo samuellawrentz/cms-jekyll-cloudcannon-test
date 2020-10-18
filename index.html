@@ -4,124 +4,6 @@ body_class: home-page
 gradient: gradient
 ---
 
-<style>
-
-    .home-page .headroom--not-top{
-        backdrop-filter: saturate(180%) blur(20px);
-    }
-    
-    .text-block .badge {
-        vertical-align: inherit;
-        margin-right: 5px;
-        display: inline-block;
-    }
-    
-    .home-page .btn{
-        transition: box-shadow 0.3s ease-out;
-    }
-    .home-page .btn.blue{
-        box-shadow: 0 11px 40px -17px #05006d;
-    }
-    .home-page .btn.green-btn{
-        box-shadow: 0 11px 40px -17px #036b17;
-    }
-    .home-page .btn:hover{
-        transform: none;
-        box-shadow: 0 0px 0px rgba(50,50,93,0.05),0 0px 0px rgba(0,0,0,0.03) !important;
-    }
-    
-    .home-page .btn.less-shadow.blue{
-        box-shadow: 0 11px 25px -20px #05006d;
-    }
-    
-    .home-page .btn.less-shadow.green-btn{
-        box-shadow: 0 11px 25px -20px #036b17;
-    }
-    
-    .move-top{
-        position:relative;
-        top: -2px;
-    }
-    
-    .badge{
-        padding: 1px 7px 3px;
-    }
-    
-    .more{
-        text-align: left;
-        padding-left: 4rem;
-        padding-right: 5rem;
-        padding-top: 1.3rem;
-    }
-    
-    .arrow-link{
-        background: #ebf2fd;
-        padding: 0.05rem 0.5rem 0.2rem 0;
-        border-radius: 15px;
-        padding-left: 0.5rem;
-        margin-bottom: 2rem;
-        display: inline-block;
-        color: inherit;
-        font-size: 12px;
-        vertical-align: 1px;
-    }
-    
-    #main .intro-visual > .container {
-        max-width: 1130px;
-    }
-    
-    .home-page .container{
-        max-width: 1130px;
-    }
-    
-    .partners-list, .more{
-        max-width: 100%;
-        flex: 1 1 50%;
-        margin-left: -1rem;
-    }
-    
-    @media (min-width: 768px){
-    .partners-list li{
-        padding: 0 1rem;
-    }
-    .partners-section{
-        margin-top: -1rem
-    }
-    
-    .home-page .intro-visual .picture-block{
-        width: 48%;
-        top: 30px;
-    }
-    
-    .intro-visual > .container{
-        margin-top: 1rem;
-    }
-    .partners-list, .more{
-        max-width: 100%;
-        flex: 1 1 50%;
-        margin-left: 0rem;
-        position: relative;
-        left: -2.7rem;
-    }
-    
-    .move-left{
-        transform: translateX(-20px);
-    }
-    
-    .move-left.little{
-        transform: translateX(-15px);
-    }
-    
-    .move-top.up{
-        top: -3px;
-    }
-    }
-    
-    .customers{
-        max-width: 1130px;
-        margin: 0 auto;
-    }
-    </style>
     <script type="application/ld+json"> {
       "@context":"http://schema.org",
       "@type":"WebSite",
@@ -211,56 +93,56 @@ gradient: gradient
         </div>
         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-12 editable">
+                <div class="col-md-12">
                     <a class="solution-box large" href="/phlo/" draggable="false" style="justify-content: flex-start">
                         <div class="solution-title justify-content-center" style="margin-right: 0">
-                            <div class="small-ico "><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-phlo-colored.svg" alt="PHLO" width="42"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-phlo-colored.svg" alt="PHLO" width="42"
                                  height="42" title="PHLO" /></div>
-                            <h3 class="heading-2">PHLO</h3>
+                            <h3 class="heading-2 editable">PHLO</h3>
                         </div>
                         <div class="solution-detail">
-                            <p>Drag. Drop. Deploy to manage your communication workflows visually</p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
+                            <p class="editable">Drag. Drop. Deploy to manage your communication workflows visually</p><span class="link editable">Learn More<span class="icon-arrow-large-right"></span></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 d-flex">
                     <a class="solution-box big" href="/sms/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-sms-colored.svg" alt="SMS API Platform"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-sms-colored.svg" alt="SMS API Platform"
                                  width="42" height="42" title="SMS API Platform" /></div>
-                            <h3 class="heading-2">SMS API Platform</h3>
+                            <h3 class="heading-2 editable">SMS API Platform</h3>
                         </div>
-                        <p>Programmatically send and receive text messages in over 190 countries globally.</p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
+                        <p class="editable">Programmatically send and receive text messages in over 190 countries globally.</p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
                 </div>
                 <div class="col-md-6 d-flex"><a class="solution-box big" href="/voice/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-voice-colored.svg" alt="Voice API Platform"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-voice-colored.svg" alt="Voice API Platform"
                                  width="42" height="42" title="Voice API Platform" /></div>
-                            <h3 class="heading-2">Voice API Platform</h3>
+                            <h3 class="heading-2 editable">Voice API Platform</h3>
                         </div>
-                        <p>Integrate powerful voice calling functionality within your apps programmatically. </p><span class="link">Learn
+                        <p class="editable">Integrate powerful voice calling functionality within your apps programmatically. </p><span class="link">Learn
                             More<span class="icon-arrow-large-right"></span></span>
                     </a>
                 </div>
                 <div class="col-md-6 d-flex">
                     <a class="solution-box big" href="/zentrunk/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-zentrunk-colored.svg" alt="Zentrunk" width="42" height="42" title="Zentrunk" /></div>
-                            <h3 class="heading-2">Zentrunk</h3>
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-zentrunk-colored.svg" alt="Zentrunk" width="42" height="42" title="Zentrunk" /></div>
+                            <h3 class="heading-2 editable">Zentrunk</h3>
                         </div>
-                        <p>Cloud based SIP Trunking to make and receive calls with your VoIP infrastructure.</p><span class="link">Learn
+                        <p class="editable">Cloud based SIP Trunking to make and receive calls with your VoIP infrastructure.</p><span class="link">Learn
                             More<span class="icon-arrow-large-right"></span></span>
                     </a>
                 </div>
                 <div class="col-md-6 d-flex">
                     <a class="solution-box big" href="/virtual-phone-numbers/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-phone-numbers-colored.svg" alt="Phone Numbers"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-phone-numbers-colored.svg" alt="Phone Numbers"
                                  width="42" height="42" title="Phone Numbers" /></div>
-                            <h3 class="heading-2">Phone Numbers</h3>
+                            <h3 class="heading-2 editable">Phone Numbers</h3>
                         </div>
-                        <p>Search and buy local, mobile, and toll-free numbers for your business worldwide.</p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
+                        <p class="editable">Search and buy local, mobile, and toll-free numbers for your business worldwide.</p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
                 </div>
             </div>
@@ -279,23 +161,23 @@ gradient: gradient
                 <div class="col-lg-4 col-md-6 d-flex">
                     <a class="solution-box" href="/docs/sms/use-cases/2-factor-authentication/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico">
+                            <div class="small-ico editable">
                                 <img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-two-factor-auth.svg" alt="Two-factor authentication" width="19" height="24" title="Two-factor authentication" />
                             </div>
                             <h3>Two-factor Authentication</h3>
                         </div>
-                        <p>Secure your applications by authenticating via dynamic verification codes.
+                        <p class="editable">Secure your applications by authenticating via dynamic verification codes.
                         </p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 d-flex">
                     <a class="solution-box" href="/docs/voice/use-cases/call-tracking/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-call-tracking.svg" alt="Call Tracking"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-call-tracking.svg" alt="Call Tracking"
                                  width="20" height="24" title="Call Tracking" /></div>
                             <h3>Call Tracking</h3>
                         </div>
-                        <p>
+                        <p class="editable">
                                 Measure and track the effectiveness of your online and offline ad campaigns.
                         </p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
@@ -303,11 +185,11 @@ gradient: gradient
                 <div class="col-lg-4 col-md-6 d-flex">
                     <a class="solution-box" href="/docs/sms/use-cases/sms-alert/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-alerts.svg" alt="Alerts and Notifications"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-alerts.svg" alt="Alerts and Notifications"
                                  width="24" height="22" title="Alerts and Notifications" /></div>
                             <h3>Alerts and Notifications</h3>
                         </div>
-                        <p>
+                        <p class="editable">
                                 Send account alerts, dispatch notifications or custom reminders.
                         </p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
@@ -315,11 +197,11 @@ gradient: gradient
                 <div class="col-lg-4 col-md-6 d-flex">
                     <a class="solution-box" href="/docs/sms/use-cases/sms-notification/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-appointment-reminders.svg" alt="Appointment Reminders" width="24"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-appointment-reminders.svg" alt="Appointment Reminders" width="24"
                                  height="22" title="Appointment Reminders" /></div>
                             <h3>Appointment Reminders</h3>
                         </div>
-                        <p>
+                        <p class="editable">
                                 Reduce no-shows by sending SMS reminders from your system.
                         </p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
@@ -327,11 +209,11 @@ gradient: gradient
                 <div class="col-lg-4 col-md-6 d-flex">
                     <a class="solution-box" href="/docs/voice/use-cases/call-forwarding/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-call-forwarding.svg" alt="Voicemail" width="24"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-call-forwarding.svg" alt="Voicemail" width="24"
                                  height="24" title="Voicemail" /></div>
                             <h3>Call Forwarding</h3>
                         </div>
-                        <p>
+                        <p class="editable">
                                 Forward calls to another phone, like your home or office number.
                         </p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
@@ -339,11 +221,11 @@ gradient: gradient
                 <div class="col-lg-4 col-md-6 d-flex">
                     <a class="solution-box" href="/docs/sms/use-cases/bulk-sms/" draggable="false">
                         <div class="solution-title justify-content-center">
-                            <div class="small-ico"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-sms-marketing.svg" alt="SMS Survey" width="23"
+                            <div class="small-ico editable"><img src="https://www.plivo.com/assets/dist/images/v2/icon/ic-sms-marketing.svg" alt="SMS Survey" width="23"
                                  height="23" title="SMS Survey" /></div>
                             <h3>SMS Marketing</h3>
                         </div>
-                        <p>
+                        <p class="editable">
                                 Drive your customer engagement with SMS based campaigns.
                         </p><span class="link">Learn More<span class="icon-arrow-large-right"></span></span>
                     </a>
@@ -355,7 +237,7 @@ gradient: gradient
     
     <section class="bottom-section text-center">
         <div class="container">
-            <h3 class="heading-2">It’s easy to get started. Sign up for free.</h3><span class="text">Create your account and receive trial credits or get in touch with us</span>
+            <h3 class="heading-2 editable">It’s easy to get started. Sign up for free.</h3><span class="text">Create your account and receive trial credits or get in touch with us</span>
             <div class="buttons-container">
                 <a class="btn btn-success green-btn btn-wide" href="https://console.plivo.com/accounts/register/">GET STARTED NOW</a>
                 <a class="btn btn-outline-success green-btn less-shadow btn-wide" href="/talk-to-an-expert/">Talk to an expert</a></div>

@@ -1,1 +1,0 @@
-This is a markdown of the first post.

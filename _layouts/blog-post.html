@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<style>
+    .blog-container{
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .article-content{
+        margin: 3rem 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: #424f61;
+    }
+
+    .article-content p{
+    line-height: 36px;
+    }
+</style>
+<div class="blog-container">
+    <h1>
+        {{page.title}}
+    </h1>
+    <img src="{{page.featured-image-url}}" alt="{{page.title}}">
+    <div class="article-content editable">
+        {{content}}
+    </div>
+</div>

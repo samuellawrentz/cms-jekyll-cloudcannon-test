@@ -3,7 +3,17 @@ layout: default
 body_class: home-page
 gradient: gradient
 permalink: /page-blocks/
-page_blocks: []
+page_blocks:
+  - _id: hero-unit
+    image: 'https://placehold.it/542x435'
+    heading_text: Connect with customers
+    sub_heading_text: This is a sub text
+    buttons:
+      - text: Contact Sales
+        link: /
+        primary: 'true'
+  - _id: why-plivo
+    title: Why Plivo Section Cloudcannon test
 ---
 
 {% for block in page.page_blocks %}

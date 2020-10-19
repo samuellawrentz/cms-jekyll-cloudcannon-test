@@ -4,11 +4,36 @@ exclude:
 incremental: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "blog-post"
       permalink: /blog/:slug/
       body_class: home-page
+
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      gallery: []
+      _array_structures:
+        gallery:
+          style: modal
+          values:
+            - label: Image
+              icon: image
+              tags:
+                - Media
+                - Asset
+              value:
+                image: /placeholder.png
+                caption:
+            - label: External link
+              icon: link
+              description: A link to another web site
+              tags:
+                - Raw value
+              value:
+                url:
+                title:

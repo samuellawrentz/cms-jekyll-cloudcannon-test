@@ -24,21 +24,18 @@ defaults:
               tags:
                 - Hero
               value:
+                _id: 'hero'
                 image: https://placehold.it/500
                 heading_text: This is a Hero
                 sub_heading_text: This is a sub text
                 buttons:
-                  values:
-                    - label: Button
-                      value:
-                      - text: Button 1
-                        link: /
-                        primary: true
-            - label: External link
-              icon: link
-              description: A link to another web site
+                  - text:
+                    link:
+                    primary: true
+            - label: Why Plivo
+              icon: dashboard
+              description: Section that contains details on Why Plivo should be used
               tags:
-                - Raw value
+                - Why Plivo
               value:
-                url:
                 title:

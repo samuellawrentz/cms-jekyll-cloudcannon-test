@@ -11,12 +11,10 @@ defaults:
       layout: "blog-post"
       permalink: /blog/:slug/
       body_class: home-page
-
   - scope:
-      path: ''
-      type: 'pages'
+      path: ""
+      type: "pages"
     values:
-      gallery: []
       _array_structures:
         gallery:
           style: modal

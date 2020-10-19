@@ -24,7 +24,7 @@ defaults:
               tags:
                 - Hero
               value:
-                _id: 'hero'
+                _id: 'hero-unit'
                 image: https://placehold.it/500
                 heading_text: This is a Hero
                 sub_heading_text: This is a sub text
@@ -38,4 +38,5 @@ defaults:
               tags:
                 - Why Plivo
               value:
-                title:
+                _id: 'why-plivo'
+                title: Why Plivo Section

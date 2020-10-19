@@ -4,11 +4,39 @@ exclude:
 incremental: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "blog-post"
       permalink: /blog/:slug/
       body_class: home-page
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      _array_structures:
+        page_blocks:
+          style: modal
+          values:
+            - label: Hero Unit
+              icon: recent_actors
+              tags:
+                - Hero
+              value:
+                _id: 'hero-unit'
+                image: https://placehold.it/542x435
+                heading_text: This is a Hero
+                sub_heading_text: This is a sub text
+                buttons:
+                  - text: "Button 1"
+                    link: "/"
+                    primary: true
+            - label: Why Plivo
+              icon: dashboard
+              description: Section that contains details on Why Plivo should be used
+              tags:
+                - Why Plivo
+              value:
+                _id: 'why-plivo'
+                title: Why Plivo Section

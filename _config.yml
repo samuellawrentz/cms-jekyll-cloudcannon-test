@@ -25,7 +25,7 @@ defaults:
                 - Hero
               value:
                 _id: 'hero-unit'
-                image: https://placehold.it/500
+                image: https://placehold.it/542x435
                 heading_text: This is a Hero
                 sub_heading_text: This is a sub text
                 buttons:

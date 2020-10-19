@@ -28,12 +28,12 @@ defaults:
                 heading_text: This is a Hero
                 sub_heading_text: This is a sub text
                 buttons:
-                  - text: Button 1
-                    link: /
-                    primary: true
-                  - text: Button 2
-                    link: /
-                    primary: false
+                  values:
+                    - label: Button
+                      value:
+                      - text: Button 1
+                        link: /
+                        primary: true
             - label: External link
               icon: link
               description: A link to another web site

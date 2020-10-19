@@ -16,17 +16,24 @@ defaults:
       type: "pages"
     values:
       _array_structures:
-        gallery:
+        page_blocks:
           style: modal
           values:
-            - label: Image
-              icon: image
+            - label: Hero Unit
+              icon: recent_actors
               tags:
-                - Media
-                - Asset
+                - Hero
               value:
-                image: /placeholder.png
-                caption:
+                image: https://placehold.it/500
+                heading_text: This is a Hero
+                sub_heading_text: This is a sub text
+                buttons:
+                  - text: Button 1
+                    link: /
+                    primary: true
+                  - text: Button 2
+                    link: /
+                    primary: false
             - label: External link
               icon: link
               description: A link to another web site
